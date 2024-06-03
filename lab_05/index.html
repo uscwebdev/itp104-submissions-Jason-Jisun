@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-image: url('lab_05/img/header.jpg');
+            background-size: contain;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            max-width: 1100px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            width: 14.28%;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+        }
+        .gray {
+            background-color: #e0e0e0;
+        }
+        .event {
+            background-size: cover;
+            color: white;
+            padding: 10px;
+        }
+        .birthday {
+            background-image: url('lab_05/img/birthday.jpg');
+            color: rgb(0, 0, 0);
+        }
+        .mothersday {
+            background-image: url('lab_05/img/mother\'sday.jpg');
+            color: rgba(255, 164, 206, 0.772);
+        }
+        .event2 {
+            background-image: url('lab_05/img/memorialday.jpg');
+            background-size: contain;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">
+                    <header>
+                        <h1>May 2024</h1>
+                    </header>
+                </th>
+            </tr>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="gray">28</td>
+                <td class="gray">29</td>
+                <td class="gray">30</td>
+                <td>1</td>
+                <td class="birthday">2<br>Birthday</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td class="mothersday">12<br>Mother's day</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td class="event2">27<br>Memerial Day</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td class="gray">31</td>
+                <td class="gray">1</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

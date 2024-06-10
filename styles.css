@@ -1,0 +1,185 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url('Assignment_03/img/Header.jpg'); 
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: left;
+}
+.content {
+    max-width: 600px;
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+}
+.sidebar img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.GuitarHistoryimg, .Myguitarimg {
+    width: 100%;
+}
+.sidebar .caption {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+section h2 {
+    font-size: 24px;
+    color: #333;
+}
+section p {
+    line-height: 1.6;
+    color: #666;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+nav ul li a:hover, nav ul li a.active {
+    background: #555;
+}
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    list-style: none;
+    padding: 0;
+}
+nav ul li:hover .dropdown {
+    display: block;
+}
+nav ul li .dropdown li {
+    display: block;
+}
+nav ul li .dropdown li a {
+    display: block;
+    padding: 10px;
+}
+
+/* Gallery Page Styles */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.gallery-container div {
+    position: relative;
+    background: #eee;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.gallery-container div img {
+    width: 100%;
+    height: auto;
+}
+.gallery-container div .caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.gallery-container div:hover .caption {
+    display: flex;
+}
+.gallery-container .item1 {
+    flex: 1 1 30%;
+    height: 200px;
+}
+.gallery-container .item2 {
+    flex: 1 1 40%;
+    height: 250px;
+}
+.gallery-container .item3 {
+    flex: 1 1 20%;
+    height: 300px;
+}
+.gallery-container .item4 {
+    flex: 1 1 30%;
+    height: 200px;
+}
+.gallery-container .item5 {
+    flex: 1 1 30%;
+    height: 250px;
+}
+.gallery-container .item6 {
+    flex: 1 1 20%;
+    height: 300px;
+}
+.gallery-container .item7 {
+    flex: 1 1 40%;
+    height: 200px;
+}
+.gallery-container .item8 {
+    flex: 1 1 30%;
+    height: 250px;
+}
+.gallery-container .item9 {
+    flex: 1 1 20%;
+    height: 300px;
+}
+.gallery-container .item10 {
+    flex: 1 1 30%;
+    height: 200px;
+}

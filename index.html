@@ -1,55 +1,136 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Electric Guitar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haoran Jisun | Student Page</title>
     <link rel="stylesheet" href="styles.css">
+<!--
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        #main {
+            width: 950px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .section2 {
+            margin-bottom: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .favorite-color {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+    
+@media (max-width: 767px) {
+    #main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+-->
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Electric Guitar</h1>
-    </header>
-    <div class="container">
-        <div class="sidebar">
-            <img src="Assignment_03/img/jimi.jpg" alt="Jimi Hendrix">
-            <div class="caption">Jimi Hendrix</div>
-            <img src="Assignment_03/img/Jimmy Page.webp" alt="Jimmy Page">
-            <div class="caption">Jimmy Page</div>
-            <img src="Assignment_03/img/Eric.webp" alt="Eric Clapton">
-            <div class="caption">Eric Clapton</div>
-        </div>
-        <div class="content">
-            <section id="section1">
-                <h2>History of Electric Guitar</h2>
-                <img src="Assignment_03/img/Guitar Evolution.webp" alt="History of Electric Guitar" class="GuitarHistoryimg">
-                <p>The electric guitar, an iconic instrument in modern music, traces its origins back to the early 20th century. The quest to amplify the guitar began in the 1920s, when musicians sought a way to be heard over the louder brass and woodwind instruments in big bands. Early attempts involved attaching a resonator to the guitar to increase its volume. However, these efforts fell short of providing the necessary amplification. The breakthrough came in the 1930s when George Beauchamp, an employee of the National String Instrument Corporation, collaborated with Adolph Rickenbacker to develop the first commercially successful electric guitar. This prototype, known as the "Frying Pan" due to its circular body and long neck, used a magnetic pickup to convert string vibrations into electrical signals, which could then be amplified through a speaker.</p>
-            </section>
-            <section id="section2">
-                <h2>Some Guitar Masters</h2>
+    <div id="main">
+        <!-- First Section -->
+        <section class="section">
+            <h1>Jason</h1>
+            <a href="mailto:hjisun@usc.edu">hjisun@usc.edu</a>
+        </section>
+
+        <!-- Second Section -->
+        <section class="section2 columns">
+            <div class="column">
+                <p>Favorite color: <strong class="favorite-color">green</strong></p>
+                <p>Favorite website: <a href="https://168675960.wixsite.com/haoran-jisun-s-portf">My Portfolio</a></p>
+                <p>Favorite activity:</p>
+                <img src="lab_08/img/The silent.jpg" alt="watch the sea" width="200" height="auto">
+            </div>
+            <div class="column">
+                <h2>Fall 2023 Schedule:</h2>
                 <ul>
-                    <li><h3>Jimi Hendrix</h3></li>
-                    <p>Jimi Hendrix, born Johnny Allen Hendrix on November 27, 1942, in Seattle, Washington, is widely regarded as one of the most influential electric guitarists in the history of popular music. Hendrix's innovative style of playing, characterized by his use of feedback, distortion, and an extensive vocabulary of guitar techniques, revolutionized the rock genre.</p>
-                    <li><h3>Jimmy Page</h3></li>
-                    <p>Jimmy Page, born January 9, 1944, in Heston, England, is a legendary guitarist best known as the founder and lead guitarist of the rock band Led Zeppelin. Renowned for his innovative guitar techniques and iconic riffs, Page has profoundly influenced rock music and is celebrated as one of the greatest guitarists of all time.</p>
-                    <li><h3>Eric Clapton</h3></li>
-                    <p>Eric Clapton, born March 30, 1945, in Ripley, England, is a legendary guitarist and singer-songwriter known for his work with bands like The Yardbirds, Cream, and his solo career. Nicknamed "Slowhand," Clapton's blues-influenced playing and soulful voice have made him one of the most influential and celebrated musicians in rock history.</p>
+                    <li>ITP 104: Web Publishing</li>
+                    <li>ITP 115: Interactive Web Development</li>
+                    <li>PYSC 100: Introduction to Psychology</li>
+                    <li>WRIT 340: Advanced Writing</li>
                 </ul>
-            </section>
-            <section id="section3">
-                <h2>I and My Guitars</h2>
-                <img src="Assignment_03/img/guitar1.jpg" alt="Guitar 1" class="Myguitarimg">
-                <img src="Assignment_03/img/guitar2.jpg" alt="Guitar 2" class="Myguitarimg">
-                <img src="Assignment_03/img/guitar3.jpg" alt="Guitar 3" class="Myguitarimg">
-                <p>To be honest, I'm not a good guitar player...</p>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <section class="section2 columns">
+            <div class="column">
+                <h2>Assignments:</h2>
+                <ul>
+                    <li><a href="Assignment_01/index.html">Assignment 1</a></li>
+                    <li><a href="Assignment_02/index.html">Assignment 2</a></li>
+                    <li><a href="Assignment_03/index.html">Assignment 3</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Labs:</h2>
+                <ul>
+                    <li><a href="lab_02/index.html">Lab 2: Student Page</a></li>
+                    <li><a href="lab_03/index.html">Lab 3: Updated Resume</a></li>
+                    <li><a href="lab_04/index.html">Lab 4: Updated Student Page</a></li>
+                    <li><a href="lab_05/index.html">Lab 5: Updated Student Page</a></li>
+                    <li><a href="lab_06/index.html">Lab 6: Updated Student Page</a></li>
+                    <li><a href="lab_07/index.html">Lab 7: Updated Student Page</a></li>
+                    <li><a href="index.html">Lab 8: Updated Student Page</a></li>
+                </ul>
+            </div>
+        </section>
     </div>
-    <footer>
-        <p>University of Southern California &copy; 2024</p>
-    </footer>
 </body>
 </html>

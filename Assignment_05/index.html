@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="A minimalistic and monochromatic photography gallery showcasing stunning photographic works, aimed at photography enthusiasts and art lovers.">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/psc.jpg" alt="Photo 1" onclick="openModal('img/psc.jpg')">
+                    <div class="caption">Serenity in Nature</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (1).jpg" alt="Photo 2" onclick="openModal('img/psc (1).jpg')">
+                    <div class="caption">Urban Exploration</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (2).jpg" alt="Photo 3" onclick="openModal('img/psc (2).jpg')">
+                    <div class="caption">Golden Hour Glow</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (3).jpg" alt="Photo 4" onclick="openModal('img/psc (3).jpg')">
+                    <div class="caption">Mountain Majesty</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (4).jpg" alt="Photo 5" onclick="openModal('img/psc (4).jpg')">
+                    <div class="caption">Reflections on Water</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (5).jpg" alt="Photo 6" onclick="openModal('img/psc (5).jpg')">
+                    <div class="caption">Forest Pathway</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (6).jpg" alt="Photo 7" onclick="openModal('img/psc (6).jpg')">
+                    <div class="caption">City Lights</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (7).jpg" alt="Photo 8" onclick="openModal('img/psc (7).jpg')">
+                    <div class="caption">Sunset Silhouette</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (8).jpg" alt="Photo 9" onclick="openModal('img/psc (8).jpg')">
+                    <div class="caption">Blooming Beauty</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (9).jpg" alt="Photo 10" onclick="openModal('img/psc (9).jpg')">
+                    <div class="caption">Tranquil Beach</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (10).jpg" alt="Photo 11" onclick="openModal('img/psc (10).jpg')">
+                    <div class="caption">Desert Dunes</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (11).jpg" alt="Photo 12" onclick="openModal('img/psc (11).jpg')">
+                    <div class="caption">Snowy Peaks</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (12).jpg" alt="Photo 13" onclick="openModal('img/psc (12).jpg')">
+                    <div class="caption">Vibrant Street Art</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (13).jpg" alt="Photo 14" onclick="openModal('img/psc (13).jpg')">
+                    <div class="caption">Starry Night Sky</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/psc (14).jpg" alt="Photo 15" onclick="openModal('img/psc (14).jpg')">
+                    <div class="caption">Waiting for the train</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(src) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

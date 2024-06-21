@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Evans Gallery</title>
+    <title>Chet Baker Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,15 +24,13 @@
     </div>
     <div class="sidebar">
         <button id="toggleLight"><img id="lightImg" src="icon/light.png" alt="Light"></button>
-        <button id="toggleMenu"><img id="menuImg" src="icon/menu.png" alt="Menu"></button>
+        <button id="toggleMenu" class="menu-trigger"><img id="menuImg" src="icon/menu.png" alt="Menu"></button>
         <button id="toggleMusic"><img id="musicImg" src="icon/play.png" alt="Music"></button>
     </div>
     <div class="menu" id="sideMenu">
-        <ul>
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-        </ul>
+        <div class="menu-text">Menu 1</div>
+        <div class="menu-text">Menu 2</div>
+        <div class="menu-text">Menu 3</div>
     </div>
     <audio id="backgroundMusic" src="music/01 Moon & Sand.mp3" loop></audio>
     <script src="script.js"></script>

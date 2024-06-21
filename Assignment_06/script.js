@@ -22,8 +22,12 @@ document.getElementById('toggleLight').addEventListener('click', () => {
     updateButtonImages();
 });
 
-document.getElementById('toggleMenu').addEventListener('click', () => {
-    document.getElementById('sideMenu').classList.toggle('show-menu');
+document.getElementById('toggleMenu').addEventListener('mouseenter', () => {
+    document.getElementById('sideMenu').classList.add('show-menu');
+});
+
+document.getElementById('sideMenu').addEventListener('mouseleave', () => {
+    document.getElementById('sideMenu').classList.remove('show-menu');
 });
 
 document.getElementById('toggleMusic').addEventListener('click', () => {

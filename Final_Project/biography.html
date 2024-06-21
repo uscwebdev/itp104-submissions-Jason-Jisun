@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chet Baker Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="typewriter">Chet Baker</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="img/Biography.webp" alt="Chet Baker" class="profile-pic">
+            <p>Chet Baker was an American jazz trumpeter and vocalist known for his mellow, delicate playing style and his smooth, lyrical voice. His career began in the early 1950s and he quickly became one of the most prominent figures in West Coast jazz.</p>
+        </section>
+        <section class="albums">
+            <h2>Famous Albums</h2>
+            <div class="album-list">
+                <div class="album" onclick="showDetails('album1')">
+                    <img src="img/Album-Sings.webp" alt="Album 1">
+                    <p>Chet Baker Sings</p>
+                </div>
+                <div class="album" onclick="showDetails('album2')">
+                    <img src="img/Album-Chet.jpg" alt="Album 2">
+                    <p>Chet</p>
+                </div>
+                <div class="album" onclick="showDetails('album3')">
+                    <img src="img/Album-my-funny-valentine.jpg" alt="Album 3">
+                    <p>My Funny Valentine</p>
+                </div>
+            </div>
+            <div id="album-details"></div>
+            <audio id="audio-player" controls style="display:none; margin-top: 20px;">
+                <source id="audio-source" src="" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+    <div class="sidebar">
+        <button onclick="location.href='index.html'"><img id="backButton" src="icon/back.png" alt="Back" class="icon"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

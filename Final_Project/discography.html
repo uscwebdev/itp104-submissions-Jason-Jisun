@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chet Baker Discography</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="typewriter">Chet Baker Discography</h1>
+  </header>
+  <main>
+    <section class="discography">
+      <h2>Albums</h2>
+      <div class="album-list">
+        <div class="vinyl-jacket" id="album1" onclick="showDetails('album1')">
+          <div class="vinyl-wrapper">
+            <div class="vinyl"></div>
+          </div>
+        </div>
+        <div class="vinyl-jacket" id="album2" onclick="showDetails('album2')">
+          <div class="vinyl-wrapper">
+            <div class="vinyl"></div>
+          </div>
+        </div>
+        <div class="vinyl-jacket" id="album3" onclick="showDetails('album3')">
+          <div class="vinyl-wrapper">
+            <div class="vinyl"></div>
+          </div>
+        </div>
+        <div class="vinyl-jacket" id="album4" onclick="showDetails('album4')">
+          <div class="vinyl-wrapper">
+            <div class="vinyl"></div>
+          </div>
+
+        </div>
+      </div>
+      <div id="album-details"></div>
+      <audio id="audio-player" controls style="display:none; margin-top: 20px;">
+        <source id="audio-source" src="" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+  <div class="sidebar">
+    <button onclick="location.href='index.html'"><img id="backButton" src="icon/back.png" alt="Back" class="icon"></button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

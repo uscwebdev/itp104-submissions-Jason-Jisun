@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chet Baker Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid" id="imageGrid">
+            <div class="grid-item"><img src="img/1.webp" alt="Image 1"></div>
+            <div class="grid-item"><img src="img/2.webp" alt="Image 2"></div>
+            <div class="grid-item"><img src="img/3.avif" alt="Image 3"></div>
+            <div class="grid-item"><img src="img/4.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="img/5.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="img/6.jpg" alt="Image 6"></div>
+            <div class="grid-item"><img src="img/7.jpg" alt="Image 7"></div>
+            <div class="grid-item"><img src="img/8.jpg" alt="Image 8"></div>
+        </div>
+        <div class="text-overlay" id="textOverlay">
+            <h1 id="text">CHET<br>BAKER</h1>
+        </div>
+    </div>
+    <div class="sidebar">
+        <button id="toggleLight"><img id="lightImg" src="icon/light.png" alt="Light"></button>
+        <button id="toggleMenu" class="menu-trigger"><img id="menuImg" src="icon/menu.png" alt="Menu"></button>
+        <button id="toggleMusic"><img id="musicImg" src="icon/play.png" alt="Music"></button>
+    </div>
+    <div class="menu" id="sideMenu">
+        <a href="biography.html" class="menu-text">biography</a>
+        <a href="discography.html" class="menu-text">discography</a>
+        <a href="live_performance.html" class="menu-text">live performance</a>
+    </div>
+    <audio id="backgroundMusic" src="music/01 Moon & Sand.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
